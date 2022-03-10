@@ -676,7 +676,7 @@ body, html {
       .footer .socials i:hover {
         color: var(--icon-color-hover); }
   .footer__text {
-    color: var(--text-color);
+    color: var(--text-color-white);
     font-size: 1.4rem;
     font-family: var(--font-family-2);
     width: 24rem;
