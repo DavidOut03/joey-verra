@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=RocknRoll+One&display=swap');
+
+:root {
+    // static styles
+    --font-family-1: 'RocknRoll One', sans-serif;
+    --font-family-2: 'Roboto', sans-serif;
+    --font-family-3: 'Roboto Slab', serif;
+    --color-shadow: #202020;
+
+    // Variable styles
+
+    --background-color: #545151;
+    --background-color-2: #3A3A3A;
+    --background-color-3: #292929;
+    --background-color-4: #696969;
+    
+    --color-white: #FFFFFF;
+    --color-primary: #EB5555;
+    --color-primary-2: #EA3333;
+    --color-primary-light: #C14E4E;
+    --color-primary-dark: #9A0C0C; 
+
+    --text-color-white: #FFFFFF;
+    --text-color: #FFFFFF;
+
+    --form-text-color: #D7D7D7;
+    --nav-link-color: #FFFFFF;
+
+    --icon-color: #696969;
+    --icon-color-hover: #858585;
+
+    --submit-color: #1C983F;
+    --submit-color-2: #11742D; 
+
+    --nav-toggler-background: #3A3A3A;
+    --nav-toggler-progressbar: #626161;
+
+    --light-mode-switch: #2E2E2E;
+}
+
+.light {
+    --background-color: #EDEDED;
+    --background-color-2: #F2F2F2;
+    --background-color-3: #436BB9;
+    --background-color-4: #FFFFFF;
+
+    --color-white: #FFFFFF;
+    --color-primary: #3B66BA;
+    --color-primary-2: #436BB9;
+    --color-primary-light: #4E7BD2;
+    --color-primary-dark: #294C8F; 
+
+    --text-color-white: #FFFFFF;
+    --text-color: #3A3A3A;
+    --form-text-color: #3E3E3E;
+    --nav-link-color: #464545;
+
+    --icon-color: #5E94FF;
+    --icon-color-hover: #72A2FF;
+
+    --submit-color: #1C983F;
+    --submit-color-2: #11742D; 
+
+    --nav-toggler-background: #D4D3D3;
+    --nav-toggler-progressbar: #E5E5E5;
+
+     --light-mode-switch: #C4C4C4;
+}

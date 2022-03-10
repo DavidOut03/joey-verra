@@ -1,0 +1,36 @@
+.moveIn {
+    opacity: 0;
+    transition: all .8s;
+
+}
+
+.moveIn.show {
+    opacity: 1 !important;
+    transform: translateX(0) translateY(0) !important;
+}
+
+.moveIn.top {
+    transform: translateX(0) translateY(-50px);
+}
+
+.moveIn.right {
+    transform: translateX(50px) translateY(0);
+}
+
+.moveIn.bottom {
+    transform: translateX(0) translateY(50px);
+}
+
+.moveIn.left {
+    transform: translateX(-50px) translateY(0);
+}
+
+@keyframes scaleIncreaser {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

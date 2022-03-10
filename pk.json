@@ -1,0 +1,57 @@
+{
+  "name": "portfolio-1.0",
+  "version": "1.0.0",
+  "description": "David's portfolio",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.4.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "install": "^0.13.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^9.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    
+    "watch:sass": "node-sass sass/main.scss src/css/App.css -w",
+    "develop": "npm-run-all --parallel watch:sass start",
+    "compile:sass": "node-sass sass/main.scss src/css/App.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/App.comp.css -o src/css/App.prefix.css",
+    "compress:css": "node-sass src/css/App.prefix.css src/css/App.comp.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

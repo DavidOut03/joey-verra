@@ -1,0 +1,13 @@
+@import "abstract/variables.scss";
+@import "abstract/mixins.scss";
+@import "abstract/animations.scss";
+
+@import "base.scss";
+
+@import "sections/hero-section.scss";
+@import "sections/collection-section";
+@import "sections/contact-section";
+
+@import "components/navigation.scss";
+@import "components/buttons.scss";
+@import "components/footer.scss";

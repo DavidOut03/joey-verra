@@ -1,0 +1,37 @@
+.btn {
+    text-align: center;
+    margin: 0.5rem 1rem;
+    padding: 1rem 3rem;
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-family: var(--font-family-2);
+    text-decoration: none;
+    background-color: #9e9696;
+   
+    box-shadow: 1px 3px 0px #393939;
+    border-radius: 14px;
+    transition: background-color 0.5s ease;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(189, 178, 178);
+    }
+}
+
+//
+.btn-primary {
+    background-color: var(--color-primary-2);
+    box-shadow: 1px 3px 0px var(--color-primary-dark);
+
+    &:hover {
+        background-color: var(--color-primary);
+    }
+}
+
+.btn-success {
+    background-color: var(--submit-color);
+    box-shadow: 1px 3px 0px var(--submit-color-2);
+}

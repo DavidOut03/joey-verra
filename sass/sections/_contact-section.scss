@@ -1,0 +1,250 @@
+.contact-section {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-2);
+    height: 100rem;
+    width: 100%;
+
+    @include respond(tab-port) {
+        height: 80rem;
+    }
+
+    .success {
+        z-index: 10;
+        text-align: center;
+        font-family: var(--font-family-1);
+        font-size: 2rem;
+        color: var(--submit-color);
+
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .success.shown {
+        display: block;
+        opacity: 1;
+    }
+
+    .contact {    
+        position: relative;
+        top: -10rem;
+        left: -55rem;
+
+        @include respond(desktop) {
+            left: -25rem;
+        }
+
+        @include respond(tab-land) {
+            left: -20rem;
+        }
+
+        @include respond(tab-port) {
+            left: 0;
+            top: 5rem;
+            align-self: center;
+            z-index: 2;
+        }
+
+        @include respond(phone) {
+            top: 0;
+        }
+
+       
+
+        text-align: center;
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .socials {
+            position: absolute;
+            left: -8rem;
+            top: 20rem;
+
+            @include respond(phone) {
+                display: none;
+            }
+
+            @include respond(tab-port) {
+                left: -7rem;
+            }
+
+            
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+    
+    
+            i {
+                color: var(--icon-color);
+                font-size: 3.5rem;
+                margin-top: 1rem;
+    
+                &:hover {
+                    color: var(--icon-color-hover)
+                }
+            }
+        }
+    }
+    
+    .map {
+        background-image: url("../images/location.png");
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+
+        @include respond(desktop) {
+            width: 40%;
+            background-position: center center;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            left: 0;
+            z-index: 1;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.8)), url("../images/car-fotos/tour-edition/3.jpg"); ;
+            background-position: center center;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+       
+
+        .information {
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+
+            padding: 4rem 3rem;
+            color: var(--color-white);
+            font-size: 1.6rem;
+            font-weight: 400;
+            background-color: #3A3A3A;
+            font-family: var(--font-family-2);
+
+            list-style: none;
+
+          
+          
+
+            @include respond(tab-port) {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            @include respond(phone) {
+                width: 25rem;
+                padding: 4rem 3rem;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            
+
+           
+
+            li > * {
+                display: inline-block;
+                
+            }
+
+            i {
+                font-size: inherit;
+                color: var(--color-primary);
+                margin-right: 1rem;
+                font-weight: inherit;
+            }
+        }
+    }
+
+    .form {
+        position: relative;
+ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__button {
+            align-self: center;
+            margin-top: 2rem;
+        }
+        &__group {
+            position: relative;
+
+            &:nth-child(3) {
+                margin-top: 2.5rem;
+            }
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            margin-top: 4rem;
+
+            @include respond(phone) {
+                margin-top: 2rem;
+            }
+        }
+
+        &__label {
+            position: absolute;
+            top: -2rem;
+            left: 0;
+            font-size: 1.4rem;
+            color: var(--color-primary);
+            font-family: var(--font-family-2);
+           
+            transition: all 1s ease;
+            max-width: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        &__label.shown {
+            max-width: 40rem;
+        }
+
+        &__input {
+            outline: none;
+            border: none;
+
+
+            background-color: var(--background-color-4);
+
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--form-text-color);
+            font-family: var(--font-family-3);
+
+            width: 40rem;
+            min-height: 5rem;
+            padding: 1rem;
+
+            @include respond(phone) {
+                width: 30rem;
+            }
+
+            &::-webkit-input-placeholder {
+                font-family: inherit;
+                color: inherit;
+            }     
+
+            &__message {
+                position: relative;
+            }
+        
+        }
+    }
+
+}
+

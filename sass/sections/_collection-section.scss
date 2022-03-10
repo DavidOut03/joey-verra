@@ -1,0 +1,98 @@
+.collection-section {
+    .cs {
+        &__title-box { 
+            width: 100%;
+            height: 40rem;
+            padding-top: 10rem;
+            padding-left: 25%;
+            overflow: hidden;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .80)), url("../images/collectie-achtergrond.png");
+
+            @include respond(tab-port) {
+                padding: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            @include respond(phone) {
+                .title {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        &__button-box {
+            @include respond(tab-port) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+               }
+        }
+
+        &__button-box > * {
+            width: 22rem;
+
+            @include respond(tab-port) {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.image-grid {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+
+
+    &__column {
+        flex: 25%;
+        max-width: 25%;
+        height: auto;
+        padding: 0 4px;
+
+        @include respond(tab-land) {
+            flex: 33%;
+            max-width: 33%;
+        }
+
+        @include respond(tab-port) {
+            flex: 50%;
+            max-width: 50%;
+        }
+
+        @include respond(phone) {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+    
+    }
+
+    &__photo {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+
+        opacity: 0;
+        transform: translateX(0) translateY(50px);
+        transition: all .8s;
+
+        &.show {
+            opacity: 1 !important;
+            transform: translateX(0) translateY(0) !important;
+        }
+    }
+}

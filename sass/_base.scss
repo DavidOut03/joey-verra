@@ -1,0 +1,84 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: var(--background-color);
+}
+
+body, html {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.title {
+    font-size: 6.4rem;
+    font-weight: 400;
+    font-family: var(--font-family-1);
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.title.white {
+    color: var(--text-color-white);
+}
+
+.socials a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lightmode {
+    &__label {
+        user-select: none;
+      
+        position: relative;
+        width: 5rem;
+        height: 2rem;
+        border-radius: 14px;
+        background-color: var(--light-mode-switch);
+    }
+
+    &__switch {
+        position: absolute;
+        border-radius: 50%;
+        transform: translateX(.2rem);
+
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--color-primary);
+        transition: transform .5s ease;
+    }
+
+    &__checkbox:checked + .lightmode__label .lightmode__switch {
+        transform: translateX(2.8rem);
+        transition: transform .5s ease;
+    }
+
+    &__checkbox {
+     display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    &-track {
+
+    }
+
+    &-thumb {
+        
+        &:hover {
+
+        }
+    }
+}

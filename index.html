@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey Verra | Auto fotograaf</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="./images/Logo-icon.png">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section class="hero-section" id="hero-section">
+        <div class="navigation">
+            <input type="checkbox" name="navigation__checkbox" id="navigation__checkbox" class="navigation__checkbox">
+            <div class="navigation__logo-box">
+               <a href="/"> <img src="images/logo.svg" alt="Logo" class="navigation__logo"></a>
+            </div>
+
+                <div class="navigation__dropdown">
+                    <ul class="navigation__items">
+                        <li class="navigation__item"><a href="#collection-section" class="navigation__link">Collectie</a></li>
+                        <li class="navigation__item"><a href="#contact-section" class="navigation__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__label-box">
+                    <label for="navigation__checkbox" class="navigation__label"><span class="navigation__label-icon">&nbsp</span></label>
+                </div>
+
+                    
+               
+                <ul class="navigation__items">
+                         
+                        <input type="checkbox" class="lightmode__checkbox" name="lightmode__checkbox" id="lightmode__checkbox">
+                        <label for="lightmode__checkbox" class="lightmode__label"><span class="lightmode__switch">&nbsp</span></label>
+                       
+           
+                    <li class="navigation__item"><a href="#collection-section" class="navigation__link">Collectie</a></li>
+                    <li class="navigation__item"><a href="#contact-section" class="navigation__link">Contact</a></li>
+                </ul>
+    
+        </div>
+
+        <div class="content">
+            <div class="content__box">
+                <h2 class="hero-section__sub-title">Hoi, mijn naam is</h2>
+                <h1 class="hero-section__title">
+                  Joey Verra
+                </h1>
+    
+                <a class="btn btn-primary" href="#collection-section">Mijn foto's</a>
+            </div>
+            <div class="content__box image-box">
+                <img src="images/joey.png" alt="" class="hero-section__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-section" id="collection-section">
+        <div class="cs__title-box">
+            <h1 class="title white">Mijn Collectie</h1>
+            <div class="cs__button-box">
+                <button class="btn btn-primary btn-tour">Tour Editie</button>
+                <button class="btn btn-shoot">Photoshoot editie</button>
+            </div>
+        </div>
+
+        <div class="image-grid"></div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="contact">
+            <h1 class="title">Contact</h1>
+            <form action="post" class="form">
+                <div class="form__group">
+                    <p class="success">Het bericht is succesvol verzonden!</p>
+                </div>
+
+               
+
+                <div class="form__group">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Naam" value="">
+                    <label for="name" class="form__label">Dit veld moet ingevuld worden!</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" name="email" id="email" placeholder="Email" value="">
+                    <label for="email" class="form__label">Dit veld moet ingevuld worden!</label>
+                </div>
+
+                <div class="form__group">
+                    <textarea class="form__input form__input__message" placeholder="Bericht" name="message" id="message" cols="30" rows="8" value=""></textarea>
+                    <label for="message" class="form__label">Dit veld moet ingevuld worden!</label>
+                </div>
+
+                    <button class="btn btn-primary form__button" type="submit">Verstuur</button>
+                
+            </form>
+            <div class="socials">
+                <a href="https://www.instagram.com/carpics.jv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@joeyjv" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="map">
+            <div class="information">
+                <li>
+                    <i class="fa-solid fa-map-location"></i>
+                    <p class="information__text">Den Haag, Nederland</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="information__text">carpics.jv@gmail.com</p>
+                </li>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Designed and developed with ❤ by <a href="http://www.davidout.com">David Out</a>. © 2022 All rights reserved
+        </p>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/carpics.jv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@joeyjv" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+    </footer>
+</body>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function() {emailjs.init("user_TVBFmK52KrJeMGpFfr4Oa");})();</script>
+</html>
